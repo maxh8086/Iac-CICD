@@ -4,8 +4,8 @@ variable "kubeconfig_path" {
   default     = var.KUBECONFIG
 }
 
-variable "docker_image" {
+variable "deployment_image" {
   description = "Docker image for the Kubernetes deployment"
   type        = string
-  default     = "maxh8086/apache:latest"
+  default     = "${var.docker_image}:${var.docker_image_tag}"
 }
