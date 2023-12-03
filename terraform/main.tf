@@ -1,5 +1,4 @@
 provider "kubernetes" {
-  kubeconfig = local.kubeconfig
 }
 
 resource "kubernetes_deployment" "apache" {

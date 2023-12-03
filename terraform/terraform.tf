@@ -10,6 +10,3 @@ module "kubernetes_deployment" {
   // You can provide any other required variables for your module here
 }
 
-output "deployment_url" {
-  value = module.kubernetes_deployment.deployment_url
-}
