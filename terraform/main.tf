@@ -24,7 +24,7 @@ resource "kubernetes_deployment" "apache" {
 
       spec {
         container {
-          image = local.deployment_image
+          image = deployment_image
           name  = "apache"
           ports {
             container_port = 80
