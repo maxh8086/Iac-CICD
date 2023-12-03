@@ -1,4 +1,5 @@
 provider "kubernetes" {
+  kubeconfig = var.kubeconfig_path
 }
 
 resource "kubernetes_deployment" "apache" {
