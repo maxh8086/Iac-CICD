@@ -7,5 +7,5 @@ variable "kubeconfig_path" {
 variable "deployment_image" {
   description = "Docker image for the Kubernetes deployment"
   type        = string
-  default     = "${var.docker_image}:${var.docker_image_tag}"
+  default     = "${var.DOCKER_IMAGE}:${var.DOCKER_TAG}"
 }
