@@ -1,5 +1,5 @@
 provider "kubernetes" {
-  kubeconfig = file(var.kubeconfig_path)
+  kubeconfig = ${local.kubeconfig}
 }
 
 resource "kubernetes_deployment" "apache" {
@@ -25,7 +25,7 @@ resource "kubernetes_deployment" "apache" {
 
       spec {
         container {
-          image = var.deployment_image
+          image = ${local.deployment_image}
           name  = "apache"
           ports {
             container_port = 80
