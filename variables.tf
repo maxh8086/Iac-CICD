@@ -1,7 +1,3 @@
-variable "kubeconfig_path" {
-  description = "Path to the kubeconfig file"
-}
-
 variable "deployment_image" {
   description = "Docker image for the Kubernetes deployment"
 }
