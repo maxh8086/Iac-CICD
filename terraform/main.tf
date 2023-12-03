@@ -24,7 +24,7 @@ resource "kubernetes_deployment" "apache" {
 
       spec {
         container {
-          image = VAR.deployment_image
+          image = "maxh8086/apache":VAR.buildnumber
           name  = "apache"
           ports {
             container_port = 80
