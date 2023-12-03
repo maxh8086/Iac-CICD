@@ -26,7 +26,7 @@ resource "kubernetes_deployment" "apache" {
         container {
           image = "maxh8086/apache:latest"
           name  = "apache"
-          ports {
+          port {
             container_port = 80
           }
         }
